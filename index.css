@@ -14,6 +14,8 @@ a{
 .nav{
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
     margin-top: -60px;
     margin-bottom: -60px;
     background-color: white;  
@@ -66,14 +68,22 @@ a{
     margin-left: 10px;
 }
 
+.nav-lhs{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
 .dropdown-M{
     position: relative;
     cursor: pointer;
     display: none;
+    margin-left: 60px;
+    margin-bottom: 4px;
 }
 .dropdown-menu{
     position: absolute;
-    right: -145px;
+    left: 15px;
     background-color: #fff;
     top: 36px;
     border-radius: 7px;
@@ -591,8 +601,7 @@ left: 70px;
     align-items: center;
     margin-left: 60px;
     border-radius: 10px;
-    
-    /* margin-top: 40px;
+    margin-top: 40px;
     
     /* margin-right: -40px; */
     background-color: white;
@@ -933,14 +942,9 @@ margin-right: 35px;
 
     @media (max-width: 460px) {    
     
-    /* .nav{
-        display: flex;
-        align-items: center;
-        width: 50%;
-        margin-top: -60px;
-        margin-bottom: -60px;
-        background-color: white;  
-    } */
+    .main{
+        gap: 0px;
+    }
 
     .nav{
         margin-left: -40px;
@@ -948,8 +952,15 @@ margin-right: 35px;
     .nav-btn{
         margin-right: 20px;
     }
+
+    .dropdown-M{
+        cursor: pointer;
+        display: block;
+    }
     
-    
+    .nav-logo{
+       margin-left: -20px;
+    }
 
     .help-label{
         display: none;
@@ -990,14 +1001,8 @@ margin-right: 35px;
         color: hsl(0, 0%, 100%);
         justify-content: space-around;
         background-color: hsl(26, 100%, 55%) !important;
-        /* border: 3px solid hsl(0, 0%, 100%) !important; */ 
     }
     
-    .dropdown-M{
-        position: relative;
-        cursor: pointer;
-        display: block;
-    }
 
     .banner{
         min-height: 500px;
@@ -1024,13 +1029,6 @@ margin-right: 35px;
      }
 
 
-    .dropdown-M{
-        display: block;
-    }
-
-
-    
-
     .categories{
         display: none;
     }
@@ -1044,6 +1042,10 @@ margin-right: 35px;
     }
     .ads2{
         display: none;
+    }
+
+    .item-section{
+        margin-top: 20px;
     }
 
 
