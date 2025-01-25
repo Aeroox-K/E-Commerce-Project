@@ -362,6 +362,7 @@ outline: none;
     display: flex;
     align-items: start;
     justify-content: space-between;
+    gap: 12px;
 }
 
 .categories{
@@ -960,6 +961,10 @@ margin-right: 35px;
     .cart small{
     position: absolute;
     left: 10px; 
+    }
+
+    .dropdown-cart{
+        right: -70px;
     }
 
     .mobile-search-bar{
