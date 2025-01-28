@@ -522,6 +522,9 @@ outline: none;
 
 
 .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     background-color: #d4822f;
     font-family: arial;
@@ -538,11 +541,10 @@ outline: none;
 }
 
 .footer-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
+    display: flex;
+    justify-content: space-around;
+    min-width: 80vw;
     justify-items: center;
-
 }
 .footer-grid p {
     font-size: 14px;
@@ -551,9 +553,8 @@ outline: none;
 .f-grid{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
 }
+
 .f-grid p{
     margin: 0;
 }
@@ -576,7 +577,7 @@ outline: none;
 }
 
 
-/* PRODUCTS */
+                                                        /* PRODUCTS */
 
 small{
 display: inline-flex;
@@ -594,33 +595,28 @@ left: 70px;
 }
 
 .products{
-    display: grid;
+    display: flex;
     min-height: 450px;
-    width: 900px;
-    grid-template-columns:repeat(2,1fr);
-    align-items: center;
-    margin-left: 60px;
-    border-radius: 10px;
-    margin-top: 40px;
-    
-    /* margin-right: -40px; */
-    background-color: white;
+    padding: 0 60px;
+    margin-top: 30px;
+    gap: 30px;
 }
+
 
 .disp{
     display: flex;
     align-items: flex-start;
-    min-height: 450px;
-    max-width: 30%;
-    margin-top: 70px;
-    margin-left: 280px;
+    min-height: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    gap: 50px;
 }
 
 
 .my-grid{
     width: 400%;
-    margin-left: 50px;
-    
+    /* margin-left: 50px;  */
 }
 .captions{
     width: 100%;
@@ -662,7 +658,7 @@ left: 70px;
 }
 
 .disp2{
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .disp2-H{
@@ -672,15 +668,14 @@ left: 70px;
     
 }
 
-.disp2-HH{
-    color: black;
-    font-size: 20px;
-    font-family: 'kum-bold', sans-serif;
-    margin-top: -20px;
+.disp2-HH .header{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 
-.disp2-HHH{
+.disp2-HH .info{
     color: black;
     font-size: 17px;
     margin-bottom: 0px;
@@ -746,6 +741,7 @@ left: 70px;
     display: flex;
     margin-top: 33px;
     align-items: center;
+    gap: 5px;
 }
 
 .cart-add{
@@ -755,7 +751,7 @@ left: 70px;
     justify-content: space-between;
     color: hsl(26, 100%, 55%);
     background-color: hsla(0, 0%, 45%, 0.075);
-    width: 90px;
+    min-width: 70px;
     height: 40px;
     padding: 5px 15px;
     border-radius: 10px;
@@ -785,11 +781,8 @@ left: 70px;
 
 .delivery{                                                          /*DELIVERY*/
     display: flex;
-    /* align-items: flex-end; */
-    min-height: 382px;
-    margin-top: -70px;
     min-width: 330px;
-    margin-left: 60px;
+    padding: 10px;
     border-radius: 7px;
     color:black;
     background-color: white;
@@ -797,7 +790,6 @@ left: 70px;
 
 .delivery-d{
     margin-left: 15px;
-    /* margin-top: 15px; */
 }
 
 .delivery-d h5{
@@ -906,10 +898,10 @@ margin-right: 35px;
 
 .related{
     background-color: white;
-    max-width: 91%;
+    max-width: 89.7%;
     margin-left: 60px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -920,7 +912,7 @@ margin-right: 35px;
     grid-template-columns:repeat(6,1fr);
     margin-top: 20px;
     margin-bottom: 20px;
-    gap: 15px;
+    gap: 5px;
 }
 
 .related h2{
@@ -934,6 +926,7 @@ margin-right: 35px;
 }
 
 .other-products button{
+margin-left: 10px;
    background-color: white;
    border: 0;
 }
@@ -1061,4 +1054,76 @@ margin-right: 35px;
 
    
 
+/* PRODUCTS */
+
+
+    .products{
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .my-grid{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .disp{
+        display: block;
+        padding: 20px;
+        margin: 0px;
+        max-width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .disp2{
+        margin: 0;
+    }
+
+
+    .delivery{
+        display: block;
+        border-radius: 0px;
+    }
+
+    .add-cart{
+        min-width: 200px;
+    }
+
+
+    .related{
+        max-width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .other-products{
+        grid-template-columns:repeat(2,1fr);
+        margin: 0;
+        gap: 10;
+    }
+    .related h2{
+        margin: 10px 0 20px 0;
+    }
+    .other-products img{
+        border-radius: 10px;
+        margin-left: 0px;
+        max-width: 100%;
+    }
+
+    /* FOOTER */
+    
+    .h6{
+        font-size: 19px;
+    }
+
+    .f-grid h4{
+        font-size: 15px;
+    }
+
+    .f-grid p{
+        font-size: 13px;
+    }
+
+    .foot-text{
+        font-size: 13px;
+    }
 }
