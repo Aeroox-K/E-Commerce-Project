@@ -657,9 +657,6 @@ left: 70px;
     padding: 0;
 }
 
-.disp2{
-    /* margin-left: 50px; */
-}
 
 .disp2-H{
     color: hsl(26, 100%, 55%);
@@ -742,6 +739,7 @@ left: 70px;
     margin-top: 33px;
     align-items: center;
     gap: 5px;
+    user-select: none;
 }
 
 .cart-add{
@@ -926,10 +924,10 @@ margin-right: 35px;
 }
 
 .other-products button{
-margin-left: 10px;
-   background-color: white;
-   border: 0;
-}
+    margin-left: 10px;
+    background-color: white;
+    border: 0;
+    }
 
                                                                 /* MOBILE SCREENS */
 
@@ -960,7 +958,6 @@ margin-left: 10px;
     }
     .cart-label{
         display: none;
-        
     }
     .cart small{
     position: absolute;
